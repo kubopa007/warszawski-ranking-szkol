@@ -1,0 +1,14 @@
+{
+  "name": "@wrs/ranking",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Deterministic school ranking engine. Reads official data only (ADR-0004).",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  }
+}

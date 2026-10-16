@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+
+# Environment / secrets — only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Private business documents (not for the public repo)
+docs/source/biznesplan.pdf
+
+# Local tooling
+.vercel/
+.turbo/
+.claude/settings.local.json
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
