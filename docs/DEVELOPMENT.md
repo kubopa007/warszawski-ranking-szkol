@@ -64,6 +64,7 @@ E-maile w development: bez `RESEND_API_KEY` treść e-maila logowana do konsoli 
 - `pnpm` niewidoczny w nowym terminalu po instalacji → otwórz terminal ponownie (PATH odświeża się przy starcie).
 - `pnpm install` odrzuca wersję Node → zainstaluj Node 24 LTS (`engineStrict` w `pnpm-workspace.yaml`).
 - `pnpm install` odmawia świeżej paczki → to `minimumReleaseAge` (24 h); wybierz starszą wersję zamiast wyłączać ochronę.
+- `os error 3` / „nie może odnaleźć ścieżki” przy `pnpm typecheck|test` → limit 260 znaków ścieżki w Windows. Trzymaj repo w krótkiej ścieżce (np. `C:\dev\wrs`) albo włącz długie ścieżki (ustawienie systemowe `LongPathsEnabled`, wymaga administratora).
 - Skrypt instalacyjny paczki zablokowany → pnpm domyślnie nie uruchamia skryptów; zezwolenie tylko po weryfikacji paczki (`pnpm approve-builds`).
 
 ## Konwencje
