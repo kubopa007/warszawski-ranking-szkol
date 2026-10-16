@@ -99,11 +99,11 @@ Recenzenci: właściciel + `code-reviewer`; dodatkowo `security-reviewer` dla ra
 
 ## CI
 
-| Workflow                                            | Kiedy                | Kroki                                                                                            |
-| --------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------ |
-| [`ci.yml`](../.github/workflows/ci.yml)             | PR, push do `main`   | install (frozen lockfile), format, lint, typecheck, test, build; `pnpm audit --audit-level=high` |
-| [`security.yml`](../.github/workflows/security.yml) | PR, push, co tydzień | gitleaks, CodeQL (darmowy dla repo publicznego)                                                  |
-| Renovate ([`renovate.json`](../renovate.json))      | poniedziałki         | PR z aktualizacjami, wersje ≥ 3 dni, akcje przypięte do SHA                                      |
+| Workflow                                            | Kiedy                         | Kroki                                                                                            |
+| --------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------ |
+| [`ci.yml`](../.github/workflows/ci.yml)             | PR, push do `main`            | install (frozen lockfile), format, lint, typecheck, test, build; `pnpm audit --audit-level=high` |
+| [`security.yml`](../.github/workflows/security.yml) | PR, push, co tydzień, ręcznie | gitleaks, CodeQL (darmowy dla repo publicznego)                                                  |
+| Renovate ([`renovate.json`](../renovate.json))      | poniedziałki                  | PR z aktualizacjami, wersje ≥ 3 dni, akcje przypięte do SHA                                      |
 
 Do dodania później: testy integracyjne z kontenerem PostGIS (pierwszy `*.int.test.ts`), Playwright e2e (po `apps/web`), podglądy Vercel (po założeniu konta).
 
