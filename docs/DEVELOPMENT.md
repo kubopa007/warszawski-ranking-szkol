@@ -59,6 +59,13 @@ E-maile w development: bez `RESEND_API_KEY` treść e-maila logowana do konsoli 
 - Testy: `pnpm --filter <pakiet> exec vitest --inspect-brk --no-file-parallelism`.
 - SQL: logowanie zapytań Drizzle tylko lokalnie (flaga — TBD).
 
+## Rozwiązywanie problemów (Windows)
+
+- `pnpm` niewidoczny w nowym terminalu po instalacji → otwórz terminal ponownie (PATH odświeża się przy starcie).
+- `pnpm install` odrzuca wersję Node → zainstaluj Node 24 LTS (`engineStrict` w `pnpm-workspace.yaml`).
+- `pnpm install` odmawia świeżej paczki → to `minimumReleaseAge` (24 h); wybierz starszą wersję zamiast wyłączać ochronę.
+- Skrypt instalacyjny paczki zablokowany → pnpm domyślnie nie uruchamia skryptów; zezwolenie tylko po weryfikacji paczki (`pnpm approve-builds`).
+
 ## Konwencje
 
 - TypeScript strict, bez `any`; `import type` dla typów.

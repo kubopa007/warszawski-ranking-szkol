@@ -4,3 +4,6 @@ packages:
 
 # Supply-chain guard: do not install package versions published less than 24 h ago.
 minimumReleaseAge: 1440
+
+# Fail install on a Node.js version outside package.json "engines" (Node 24 LTS).
+engineStrict: true
