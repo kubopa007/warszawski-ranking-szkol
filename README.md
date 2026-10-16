@@ -9,6 +9,8 @@ pnpm install
 pnpm check
 ```
 
+**Zacznij od [START_HERE.md](START_HERE.md)** — codzienna praca, Claude Code, Issues i PR.
+
 | Dokument                                             | Treść                          |
 | ---------------------------------------------------- | ------------------------------ |
 | [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md) | cel, zakres, etapy             |
