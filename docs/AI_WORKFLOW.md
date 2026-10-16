@@ -77,8 +77,9 @@ Wiedza tylko w historii czatu przepada po `/clear` — i trzeba ją potem odtwar
 
 ## 9. Bezpieczeństwo pracy z AI
 
-- Twarde blokady są w `.claude/settings.json` (`permissions.deny`) i hooku `.claude/hooks/guard.mjs` — nie w samych instrukcjach. Blokowane: odczyt/edycja `.env*`, `git push`, `reset --hard`, `clean`, `rm -rf`, merge PR, publikacja paczek, deploy produkcyjny.
-- Push, merge, tworzenie Issues/PR, zmiany w ustawieniach repo i chmurze wykonujesz Ty albo AI po Twojej wyraźnej zgodzie.
+- Twarde blokady są w `.claude/settings.json` (`permissions.deny`) i hooku `.claude/hooks/guard.mjs` — nie w samych instrukcjach. Blokowane: odczyt/edycja `.env*`, force push, push do `main`, usuwanie zdalnych branchy, `reset --hard`, `clean`, `rm -rf`, merge PR, publikacja paczek, deploy produkcyjny.
+- AI może pushować własny branch Issue i otwierać jego PR (w `/pr-prepare` po jednym potwierdzeniu). Merge, tworzenie Issues, zmiany w ustawieniach repo i chmurze wykonujesz Ty albo AI po Twojej wyraźnej zgodzie.
+- Hook nie widzi bieżącego brancha, więc gołe `git push` na `main` przejdzie. Drugą linią obrony jest ruleset `main` w GitHub (wymagany PR, blokada force push).
 - Znane ograniczenie hooka: blokuje każdą komendę zawierającą tekst `.env` (np. w treści commit message) — przeformułuj tekst zamiast wyłączać hook.
 
 ## 10. Szybka ściąga kosztów

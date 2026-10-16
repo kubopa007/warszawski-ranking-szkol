@@ -16,7 +16,10 @@ function envRefs(text) {
 }
 
 const DANGEROUS = [
-  [/\bgit\s+push\b/, 'git push — wymaga zgody właściciela'],
+  [/\bgit\s+push\b.*(\s-f\b|--force|\s\+\S)/, 'force push'],
+  [/\bgit\s+push\b.*[\s:]main(\s|$)/, 'push do main — zmiany na main tylko przez PR'],
+  [/\bgit\s+push\b.*(--delete\b|\s-d\b|\s:\S)/, 'usunięcie zdalnego brancha'],
+  [/\bgit\s+push\b.*--(all|mirror)\b/, 'git push --all/--mirror'],
   [/\bgit\s+reset\s+--hard\b/, 'git reset --hard'],
   [/\bgit\s+clean\s+-\w*f/, 'git clean -f'],
   [/\bgit\s+branch\s+-D\b/, 'git branch -D'],

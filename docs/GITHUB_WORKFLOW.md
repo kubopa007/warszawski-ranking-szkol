@@ -78,7 +78,7 @@ W treści: `Refs #N`. Commity na branchu mogą być robocze — liczy się tytu�
 - Szablon: [`.github/pull_request_template.md`](../.github/pull_request_template.md); pierwsza linia `Closes #N`.
 - Tytuł PR = przyszły commit na `main` (Conventional Commits, ≤ 70 znaków).
 - Jeden PR = jedno Issue. Draft PR dla wczesnej informacji zwrotnej.
-- Tworzy: `/pr-prepare` (push i `gh pr create` dopiero po Twojej zgodzie).
+- Tworzy: `/pr-prepare` (po Twoim potwierdzeniu AI pushuje branch i wykonuje `gh pr create`; merge zawsze Ty).
 
 ### Checklista code review
 

@@ -101,7 +101,7 @@ Popraw tylko uwagi 1 i 3 z review, potem pnpm check.
 
 ## 7. Pull Request
 
-`/pr-prepare` sprawdza Definition of Done, przygotowuje tytuł i opis z szablonu, a push i `gh pr create` wykonuje **dopiero po Twojej zgodzie**.
+`/pr-prepare` sprawdza Definition of Done, przygotowuje tytuł i opis z szablonu, a po Twoim „tak” pushuje branch i otwiera PR. Nigdy nie pushuje do `main` ani nie merguje.
 
 ```bash
 gh pr view --web
@@ -119,7 +119,7 @@ git switch main
 git pull --ff-only
 ```
 
-AI nie merguje i nie pushuje bez zgody (twarde blokady w `.claude/settings.json` i hooku).
+AI nie merguje, nie pushuje do `main` i nie robi force push (twarde blokady w `.claude/settings.json` i hooku).
 
 ## 9. Dokumentacja
 
