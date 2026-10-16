@@ -1,0 +1,34 @@
+name: Technical task
+description: Zadanie techniczne (konfiguracja, refaktor, spike, zależności, dokumentacja)
+title: 'chore: '
+labels: ['type: task', 'status: needs-triage']
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Co i dlaczego
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Warunki ukończenia
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Rodzaj
+      options:
+        - konfiguracja / CI
+        - refaktor
+        - spike (badanie, wynik = ADR lub notatka)
+        - zależności
+        - dokumentacja
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Zależności
+      description: '`Blocked by #N`, `Part of #N`'

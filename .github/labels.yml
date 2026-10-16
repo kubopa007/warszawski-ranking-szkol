@@ -1,0 +1,26 @@
+# Label definitions — source of truth. Not applied automatically.
+# Apply manually (after `gh auth login`), see docs/GITHUB_WORKFLOW.md#etykiety.
+- { name: 'type: feature', color: '1d76db', description: 'Nowa funkcjonalność' }
+- { name: 'type: bug', color: 'd73a4a', description: 'Błąd' }
+- { name: 'type: task', color: 'c5def5', description: 'Zadanie techniczne' }
+- { name: 'type: epic', color: '5319e7', description: 'Epik grupujący Issues' }
+- { name: 'priority: P0', color: 'b60205', description: 'Krytyczne: blokuje, bezpieczeństwo, dane' }
+- { name: 'priority: P1', color: 'd93f0b', description: 'Wysokie' }
+- { name: 'priority: P2', color: 'fbca04', description: 'Normalne' }
+- { name: 'priority: P3', color: 'c2e0c6', description: 'Niskie' }
+- { name: 'area: ranking', color: '0e8a16', description: 'packages/ranking' }
+- { name: 'area: data-import', color: '0e8a16', description: 'packages/data-import' }
+- { name: 'area: web', color: '0e8a16', description: 'Strony publiczne' }
+- { name: 'area: panel', color: '0e8a16', description: 'Panel / Payload' }
+- { name: 'area: auth', color: '0e8a16', description: 'Logowanie i uprawnienia' }
+- { name: 'area: db', color: '0e8a16', description: 'Baza i migracje' }
+- { name: 'area: infra', color: '0e8a16', description: 'CI, konfiguracja, deploy' }
+- { name: 'status: needs-triage', color: 'ededed', description: 'Do oceny' }
+- { name: 'status: ready', color: '0075ca', description: 'Spełnia Definition of Ready' }
+- {
+    name: 'status: blocked',
+    color: '000000',
+    description: 'Zablokowane przez inne Issue lub decyzję',
+  }
+- { name: 'security-review', color: 'ee0701', description: 'Wymaga przeglądu bezpieczeństwa' }
+- { name: 'dependencies', color: '0366d6', description: 'Aktualizacje zależności (Renovate)' }

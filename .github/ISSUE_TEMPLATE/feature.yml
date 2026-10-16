@@ -1,0 +1,55 @@
+name: Feature
+description: Nowa funkcjonalność lub zmiana zachowania
+title: 'feat: '
+labels: ['type: feature', 'status: needs-triage']
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Cel
+      description: Kto, czego potrzebuje i po co (1–3 zdania).
+      placeholder: Jako rodzic chcę ..., aby ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Kryteria akceptacji
+      description: Sprawdzalne warunki. Każdy zamieni się w test.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Zakres / poza zakresem
+      placeholder: |
+        W zakresie: ...
+        Poza zakresem: ...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Obszar
+      multiple: true
+      options:
+        - ranking
+        - data-import
+        - web (strony publiczne)
+        - panel / Payload
+        - auth / uprawnienia
+        - baza / migracje
+        - płatności
+        - AI
+        - infra / CI
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Zależności
+      description: 'Blokujące Issues: `Blocked by #N`. Epik: `Part of #N`.'
+  - type: textarea
+    id: notes
+    attributes:
+      label: Uwagi techniczne / TBD
+      description: Otwarte pytania, linki do ADR i docs.

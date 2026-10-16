@@ -15,6 +15,7 @@ Reply to the user in **Polish**. Code, identifiers and commit messages in Englis
 | Commands, tests, debugging    | `docs/DEVELOPMENT.md`                                                     |
 | Decisions                     | `docs/adr/README.md` (index first, then one ADR)                          |
 | AI workflow, token rules      | `docs/AI_WORKFLOW.md`                                                     |
+| Issues, branches, PR, CI      | `docs/GITHUB_WORKFLOW.md`                                                 |
 | Original spec (17 pages)      | `docs/source/architektura-techniczna.pdf` — only if docs/ lack the answer |
 
 ## Stack (approved — do not change without an ADR + owner approval)

@@ -1,0 +1,48 @@
+name: Bug
+description: Błąd w działaniu
+title: 'fix: '
+labels: ['type: bug', 'status: needs-triage']
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Co się dzieje
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Czego oczekiwano
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Kroki do odtworzenia
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Środowisko
+      placeholder: lokalne / podgląd PR / staging, przeglądarka, commit
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logi / zrzuty ekranu
+      description: Tylko istotne linie. Bez sekretów, tokenów i danych osobowych.
+      render: text
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Waga
+      options:
+        - 'P0 — blokuje / bezpieczeństwo / dane'
+        - 'P1 — ważna funkcja nie działa'
+        - 'P2 — obejście istnieje'
+        - 'P3 — kosmetyka'
+    validations:
+      required: true

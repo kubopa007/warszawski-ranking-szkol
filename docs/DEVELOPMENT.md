@@ -65,4 +65,4 @@ E-maile w development: bez `RESEND_API_KEY` treść e-maila logowana do konsoli 
 - Pliki: `kebab-case.ts`; komponenty React: `PascalCase.tsx`.
 - Testy obok kodu; dane wzorcowe w `__fixtures__/`.
 - Wersje zależności przypięte dokładnie (bez `^`).
-- Branche, commity, PR: **TBD** (workflow GitHub — Etap 5).
+- Branche, commity, PR: [GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md).
