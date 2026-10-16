@@ -55,8 +55,9 @@ Acceptance criteria met · tests for new logic (ranking rules 100%, each role ×
 
 - Changing the stack, architecture, data zones, ranking methodology or weights.
 - Adding a dependency, service, MCP server or paid resource.
-- `git push`, merge, rebase of shared branches, deleting branches/files, force operations.
-- Creating GitHub issues/labels/PRs or changing repo settings.
+- Merge, rebase of shared branches, deleting branches/files, force operations, pushing to `main`.
+  Pushing your own issue branch and opening its PR is allowed (`/pr-prepare` confirms once); merging stays with the owner.
+- Creating GitHub issues/labels or changing repo settings.
 - Any deploy, any cloud account action.
 - Anything marked **TBD** in docs — surface it, don't invent it.
 
